@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <title>Best products/thesign R</title>
+
+  <link href="index.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="year.css" rel="stylesheet">
+  <!--year picking links-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- image or logo here-->
+      <a class="navbar-brand" href="#">thesignR's</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="num.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Options
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
+          <button class="btn btn-outline-primery" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--all crud data is placed from here pasted on libreoffice writer-->
+  <div class="container">
+    <!--create button-->
+    <div class="d-flex bd-highlight mb-3">
+      <div class="me-auto p-2 bd-highlight">
+        <h3>Iconic products from Apple</h3>
+      </div>
+      <div class="p-3 bd-highlight">
+        <button class="btn btn-primary btn-medium" data-bs-toggle="modal" data-bs-target="#enroll">
+          create
+        </button>
+      </div>
+    </div>
+    <!--create-->
+    <!-- working with popup with bootstrap -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Create</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Add a new product details here</p>
+            <form>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">#</span>
+                <input type="text" class="form-control" placeholder="Product code" aria-label="Product code"
+                  aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Product Name" aria-label="Product Name"
+                  aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">Name</span>
+              </div>
+              <div class="input-group mb-3">
+
+                <form method="post">
+                  <span class="input-group-text" id="basic-addon3">year</span>
+                  <input class="date-own form-control">
+                  <script type="text/javascript">
+                    $('.date-own').datepicker({
+                      minViewMode: 2,
+                      format: 'yyyy'
+                    });
+                  </script>
+                </form>
+
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Price</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+
+                <select class="form-select input-group-text" aria-label="Currency">
+                  <span class="input-gruop-text">currency</span>
+                  <option selected>Currency</option>
+                  <option value="1">$</option>
+                  <option value="2">₹</option>
+                  <option value="3">€</option>
+
+                </select>
+              </div>
+
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Category" aria-label="Category">
+                <span class="input-group-text">@</span>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-text">Info...</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+              <div>
+                <label>Available : </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  No
+                </label>
+              </div>
+              <div>
+                <label for="basic-url" class="form-label">Availability URL</label>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">https://example.com/buynow/</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Enable delete
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Enable edit
+              </label>
+            </div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <table class="table">
+      <thead></thead>
+      <thead>
+        <tr>
+          <th scope="col">Product code</th>
+          <th scope="col">Name</th>
+          <th scope="col">Year of launch</th>
+          <th scope="col">Price</th>
+          <th scope="col">Category</th>
+          <th scope="col">Info</th>
+          <th scope="col">Availability</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tr>
+      <tr>
+        <td>101</td>
+        <td>ipod</td>
+        <td>2001</td>
+        <td>₹ 13,800</td>
+        <td>Music Player</td>
+        <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1"
+            role="button" aria-expanded="false" aria-controls="collapseExample1">
+            Know more..
+            <div class="collapse" id="collapseExample1">
+              <div class="card card-body">
+                The iPod is a discontinued series of portable media players and multi-purpose mobile devices designed
+                and
+                marketed by Apple Inc. The first version was released on October 23, 2001, about 81⁄2 months after the
+                Macintosh version of iTunes was released. Apple sold an estimated 450 million iPod products as of 2022.
+              </div>
+            </div>
+        </td>
+        <td>
+          <a class="nav-link" href="https://www.ebay.com/b/Apple-iPod-1st-Generation-MP3-Players/73839/bn_7116933822"
+            tabindex="-1" aria-disabled="true">Buynow</a></td>
+        <td>
+          <!--edit button working-->
+          <button class="btn btn-success btn-sm" data-id="3" data-toggle="modal"
+            data-target="#exampleModal">Edit</button><a href="#myModal" class="trigger-btn" data-toggle="modal"><button
+              type="button" class="btn btn-danger btn-sm">Delete</button></a>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="lead">Edit Product details</p>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Product Code</span>
+                    <input type="text" class="form-control" aria-label="Product code" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">Name</span>
+                    <input type="text" class="form-control" aria-label="Product code" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">year</span>
+                    <input type="text" class="form-control" aria-label="Product code" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">Price</span>
+                    <input type="text" class="form-control" aria-label="Product code" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">Category</span>
+                    <input type="text" class="form-control" aria-label="Product code" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">Info</span>
+                    <input type="text" class="form-control" aria-label="Product code" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">Availability</span>
+                    <input type="text" class="form-control" aria-label="Product code" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="saveEdit btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>iMac G3</td>
+        <td>1999</td>
+        <td>$ 1299</td>
+        <td>Computer</td>
+        <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2"
+            role="button" aria-expanded="false" aria-controls="collapseExample2">
+            Know more..
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body">
+                The Bondai Blue iMac, officially the iMac G3, was the first product to truly showcase the design skills
+                of
+                Jonathan Ive and the impeccable taste of Steve Jobs; but it was so much more than that. In a time when
+                computers were bland beige boxes with no pleasing aesthetics at all, the G3 made people realise that
+                they
+                could actually offer visual personality.
+              </div>
+            </div>
+        </td>
+        <td><a class="nav-link"
+            href="https://www.ebay.com/b/Apple-PowerPC-G3-Desktops-All-In-One-Computers/111418/bn_635488" tabindex="-1"
+            aria-disabled="true">Buynow</a></td>
+        <td>
+          <button class="btn btn-success btn-sm" data-id="3" data-toggle="modal"
+            data-target="#exampleModal">Edit</button><a href="#myModal" class="trigger-btn" data-toggle="modal"><button
+              type="button" class="btn btn-danger btn-sm">Delete</button></a>
+        </td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>iPad 1st Gen</td>
+        <td>2010</td>
+        <td>$ 499</td>
+        <td>Tab</td>
+        <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3"
+            role="button" aria-expanded="false" aria-controls="collapseExample3">
+            Know more..
+            <div class="collapse" id="collapseExample3">
+              <div class="card card-body">
+                While the prediction of doom for traditional computing has not come true, largely thanks to Apple’s work
+                on
+                the MacBook, it is true that the iPad has come to dominate the tablet industry and also the way millions
+                of
+                people browse the web and entertain themselves today. The iPhone’s big brother remains a hugely
+                influential
+                product that is still used literally everywhere.
+              </div>
+            </div>
+        </td>
+        <td><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Buynow</a></td>
+        <td>
+  </div><button class="btn btn-success btn-sm" data-id="3" data-toggle="modal"
+    data-target="#exampleModal">Edit</button><a href="#myModal" class="trigger-btn" data-toggle="modal"><button
+      type="button" class="btn btn-danger btn-sm">Delete</button></a></td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td>iPhone 4</td>
+    <td>2010</td>
+    <td>₹ 13,999</td>
+    <td>Mobile</td>
+    <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4"
+        role="button" aria-expanded="false" aria-controls="collapseExample4">
+        Know more..
+        <div class="collapse" id="collapseExample4">
+          <div class="card card-body">The iPhone 4 was to phones what the Bondai Blue iMac was to computers. It was all
+            about the design and Apple showed that smartphones could be thin, lightweight and most importantly visually
+            desirable. Of course there were many technical enhancements over the iPhone 3 range such as the A4 chip, iOS
+            4
+            with multi-tasking and FaceTime, but ultimately it was the new Retina display that made people look at
+            phones
+            in a whole new way.
+          </div>
+        </div>
+    </td>
+    <td><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Buynow</a></td>
+    <td>
+      <button class="btn btn-success btn-sm" data-id="3" data-toggle="modal" data-target="#exampleModal">Edit</button><a
+        href="#myModal" class="trigger-btn" data-toggle="modal"><button type="button"
+          class="btn btn-danger btn-sm">Delete</button></a></td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>Apple II</td>
+    <td>1997</td>
+    <td>$ 1,298 ($5,800 in 2021)</td>
+    <td>Computer</td>
+    <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5"
+        role="button" aria-expanded="false" aria-controls="collapseExample5">
+        Know more..
+        <div class="collapse" id="collapseExample5">
+          <div class="card card-body">With colour display capabilities, a pleasing case design (for the time of course)
+            and a built-in speaker, it was one of the first computers to offer a personal slant that was maybe only
+            truly appreciated later on. It also offered everyone the first glimpse of what Apple as a company was about
+            and where its focus would lie in the future, but no one at the time could have guessed what would follow in
+            the next 40 years
+          </div>
+        </div>
+    </td>
+    <td><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Buynow</a></td>
+    <td>
+      <button class="btn btn-success btn-sm" data-id="3" data-toggle="modal" data-target="#exampleModal">Edit</button><a
+        href="#myModal" class="trigger-btn" data-toggle="modal"><button type="button"
+          class="btn btn-danger btn-sm">Delete</button></a></td>
+  </tr>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td>Apple Watch Series 1</td>
+    <td>2015</td>
+    <td>₹ 25,900</td>
+    <td>Smart Watch</td>
+    <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6"
+        role="button" aria-expanded="false" aria-controls="collapseExample6">
+        Know more..
+
+        <div class="collapse" id="collapseExample6">
+          <div class="card card-body">Potentially, the first Apple Watch is the riskiest major product that Apple has
+            released in recent times. The smartphone was still relatively new in 2015 and to supplement it with a
+            product
+            that technically offered few extra obvious features could have gone horribly wrong, but it didn’t and over
+            time it has become the dominant force in wearables.
+          </div>
+        </div>
+    </td>
+    <td><a class="nav-link"
+        href="https://www.apple.com/in/shop/accessories/all/made-by-apple?f=series1-watch38mm&fh=47a7%2B49fe%2B44d1"
+        tabindex="-1" aria-disabled="true">Buynow</a></td>
+    <td>
+      <button class="btn btn-success btn-sm" data-id="3" data-toggle="modal" data-target="#exampleModal">Edit</button><a
+        href="#myModal" class="trigger-btn" data-toggle="modal"><button type="button"
+          class="btn btn-danger btn-sm">Delete</button></a></td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td>MacBook Pro</td>
+    <td>2021</td>
+    <td>₹ 1,42,900</td>
+    <td>Laptop</td>
+    <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7"
+        role="button" aria-expanded="false" aria-controls="collapseExample7">
+        Know more..
+        <div class="collapse" id="collapseExample7">
+          <div class="card card-body">Yes, it has a notch – but that one controversial design detail isn't enough to
+            detract from the sheer impressiveness of Apple's game-changing 2021 MacBook Pro. The ProMotion LED display
+            is a delight to use, and the M1 Pro and Max chips are faster than anything before.
+          </div>
+        </div>
+    </td>
+    <td><a class="nav-link" href="https://www.apple.com/in/shop/buy-mac/macbook-pro" tabindex="-1"
+        aria-disabled="true">Buy now</a></td>
+    <td>
+      <button class="btn btn-success btn-sm" data-id="3" data-toggle="modal" data-target="#exampleModal">Edit</button><a
+        href="#myModal" class="trigger-btn" data-toggle="modal"><button type="button"
+          class="btn btn-danger btn-sm">Delete</button></a></td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td> Apple Macintosh</td>
+    <td>1984</td>
+    <td>$ 2,495 ($6,510 in 2021)</td>
+    <td>Computer</td>
+    <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8"
+        role="button" aria-expanded="false" aria-controls="collapseExample8">
+        Know more..
+        <div class="collapse" id="collapseExample8">
+          <div class="card card-body">For all of the importance of the very early Apple computers, the Macintosh 128K is
+            the one that continues to live on today and not just in name (iMac, MacBook, etc). The graphical user
+            interface, built-in nine-inch screen and mouse made the Macintosh the first to include all three and thus it
+            shaped what we consider a computer to be today. The beige case also had a handle built into the top for
+            portability.
+          </div>
+        </div>
+    </td>
+    <td><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></td>
+    <td>
+      </div><button class="btn btn-success btn-sm" data-id="3" data-toggle="modal"
+        data-target="#exampleModal">Edit</button><a href="#myModal" class="trigger-btn" data-toggle="modal"><button
+          type="button" class="btn btn-danger btn-sm">Delete</button></a></td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>iPhone 1st Gen</td>
+    <td>2017</td>
+    <td>$ 499</td>
+    <td>Smart phone</td>
+    <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#multicollapseExample9"
+        role="button" aria-expanded="false" aria-controls="multicollapseExample9">
+        Know more..
+        <div class="collapse" id="multicollapseExample9">
+          <div class="card card-body">Apple’s most successful product ever completely changed the way we communicate
+            with each other and consume information. It made smartphones approachable and, despite not including
+            third-party apps or 3G connectivity, it easily demonstrated the potential for such a device by ditching a
+            physical keyboard and stylus control in favour of a pioneering touchscreen interface that has become the
+            norm.
+          </div>
+        </div>
+    </td>
+    <td><a class="nav-link" href="https://www.apple.com/in/shop/buy-iphone" tabindex="-1"
+        aria-disabled="true">Buynow</a></td>
+    <td>
+      <button class="btn btn-success btn-sm" data-id="3" data-toggle="modal" data-target="#exampleModal">Edit</button><a
+        href="#myModal" class="trigger-btn" data-toggle="modal"><button type="button"
+          class="btn btn-danger btn-sm">Delete</button></a></td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>Siri</td>
+    <td>2011</td>
+    <td>-</td>
+    <td>Assistant</td>
+    <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#multicollapseExample10"
+        role="button" aria-expanded="false" aria-controls="multicollapseExample10">
+        Know more..
+        <div class="collapse" id="multicollapseExample10">
+          <div class="card card-body"> Siri shines, alongside all of Apple’s products, is that it is secure and this is
+            why it is slightly limited in what it can do. The fact is, however, that Siri is still a marvel on any Apple
+            product and new ways of utilising it are constantly being woven into the fabric of Apple’s operating
+            systems.
+          </div>
+        </div>
+    </td>
+    <td><a class="nav-link disabled" href="https://www.apple.com/in/shop/buy-iphone" tabindex="-1"
+        aria-disabled="true">Buynow</a></td>
+    <td>
+      <button class="btn btn-success btn-sm" data-id="3" data-toggle="modal" data-target="#exampleModal">Edit</button><a
+        href="#myModal" class="trigger-btn" data-toggle="modal"><button type="button"
+          class="btn btn-danger btn-sm">Delete</button></a></td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td>MacBook Air 1st gen</td>
+    <td>2008</td>
+    <td>₹ 65,000</td>
+    <td>Laptop</td>
+    <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#multicollapseExample11"
+        role="button" aria-expanded="false" aria-controls="multicollapseExample11">
+        Know more..
+        <div class="collapse" id="multicollapseExample11">
+          <div class="card card-body">To understand how influential the original MacBook Air was all you need to do is
+            look at the competition today. So many modern laptops look like the Air and it would be more than fair to
+            say that Apple nailed the design first time. Initially only available as a 13.3-inch model, the Air was
+            launched as the world’s thinnest notebook to mixed reviews. Praised for its light weight and portability,
+            but criticised for offering limited configuration options and ports, the Air now serves as Apple’s
+            entry-level laptop. Which is not too bad a place to start.
+          </div>
+        </div>
+    </td>
+    <td><a class="nav-link"
+        href="https://www.apple.com/in/macbook-air/?afid=p238%7CsvcdiUNmi-dc_mtid_187079nc38483_pcrid_587055679810_pgrid_109263621733_pntwk_g_pchan__pexid__&cid=aos-IN-kwgo-mac--slid---product-"
+        tabindex="-1" aria-disabled="true">Buynow</a></td>
+    <td>
+      <button class="btn btn-success btn-sm" data-id="3" data-toggle="modal" data-target="#exampleModal">Edit</button><a
+        href="#myModal" class="trigger-btn" data-toggle="modal"><button type="button"
+          class="btn btn-danger btn-sm">Delete</button></a></td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>iMac</td>
+    <td>2021</td>
+    <td>₹ 1,19,900</td>
+    <td>PC</td>
+    <td><a class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#multicollapseExample12"
+        role="button" aria-expanded="false" aria-controls="multicollapseExample12">
+        Know more..
+        <div class="collapse" id="multicollapseExample12">
+          <div class="card card-body">Apple’s most successful product ever completely changed the way we communicate
+            with each other and consume information. It made smartphones approachable and, despite not including
+            third-party apps or 3G connectivity, it easily demonstrated the potential for such a device by ditching a
+            physical keyboard and stylus control in favour of a pioneering touchscreen interface that has become the
+            norm.
+          </div>
+        </div>
+    </td>
+    <td><a class="nav-link" href="https://www.apple.com/in/mac/" tabindex="-1" aria-disabled="true">Buynow</a></td>
+    <td>
+      <button class="btn btn-success btn-sm" data-id="3" data-toggle="modal" data-target="#exampleModal">Edit</button><a
+        href="#myModal" class="trigger-btn" data-toggle="modal"><button type="button"
+          class="btn btn-danger btn-sm">Delete</button></a></td>
+  </tr>
+  <!-- Delete Modal HTML -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Are you sure?</h5><button type="button" class="btn-close"
+            data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Do you really want to delete these records?</p>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </table>
+  </div>
+  </div>
+  <span>
+    <div>
+      <div class="d-flex justify-content-center">
+        <ul class="pagination mt-3 mb-0">
+          <li class="disabled page-item"><a href="#" class="page-link">‹</a></li>
+          <li class="active page-item"><a href="#" class="page-link">1</a></li>
+          <li class="page-item"><a href="#" class="page-link">2</a></li>
+          <li class="page-item"><a href="#" class="page-link">3</a></li>
+          <li class="page-item"><a href="#" class="page-link">4</a></li>
+          <li class="page-item"><a href="#" class="page-link">›</a></li>
+          <li class="page-item"><a href="#" class="page-link">»</a></li>
+        </ul>
+      </div>
+    </div>
+  </span>
+
+  <div class="b-example-divider"></div>
+  <!--footer-->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pagetop</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
